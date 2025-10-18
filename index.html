@@ -11,106 +11,237 @@
   		background-color: black;
     }
     
-    #part1 {
-      position: relative;
-  		margin: auto;
-		  width: 100%;
-      max-width: 1080px;
-      aspect-ratio: 1/1;
-  		text-align: center;
-  		color: white;
-      background-color: white;
-			background-image: url("https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/BG%202.png");
-  		background-position: center top;
-  		background-repeat: no-repeat;
-  		background-size: contain;
-  		border: 1px solid green;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;	
-    }
-      
-    #biglogo {
-      position: absolute;
-      top: 10%;
-      left: 10%;
-		  width: 30%;
-      aspect-ratio: 1/1;
-  		text-align: center;
-  		color: white;
-			background-image: url("https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/logo%202.png");
-  		background-position: center;
-  		background-repeat: no-repeat;
-  		background-size: contain;
-  		border: 1px solid green;
-    }
-      
-    #bigmike {
-      position: absolute;
-      top: 10%;
-      left: 40%;
-		  width: 50%;
-      aspect-ratio: 1/1;
-  		text-align: center;
-  		color: white;
-			background-image: url("https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/Mike%202a.png");
-  		background-position: center;
-  		background-repeat: no-repeat;
-  		background-size: contain;
-  		border: 1px solid green;
-    }
-    
-    #mikespage {
-      position: relative;
-      top: 10%;
-		  width: 100%;
-		  height: 40%;
-      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%);
-  		background-position: center top;
-  		background-repeat: no-repeat;
-  		background-size: contain;
-  		border: 1px solid green;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10%;
-      box-sizing: border-box;
-    }
-      
-    #mikepix {
-		  width: 20%;
-      height: auto;
-      aspect-ratio: 1/1;
-  		text-align: center;
-			background-image: url("https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/mikepix.png");
-  		background-position: center;
-  		background-repeat: no-repeat;
-  		background-size: contain;
-      transform: scaleX(-1);
-  		border: 1px solid green;
-    }
-    
     @font-face {
  		 font-family: gensin;
  		 src: url("https://raw.githubusercontent.com/Namlihaa/mikesquest/refs/heads/main/images/zh-cn.ttf");
 		}
     
-    #spell {
-		  width: 70%;
-  		text-align: justify;
+    #part1 {
+      position: relative;
+  		margin: auto;
+		  width: 100%;
+      height: 300vh;
+  		color: white;
+      display: flex;
+  		flex-flow: column wrap;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+			background-image: url("https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/BG%202.png");
+  		background-position: center;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		border: 1px solid yellow;
+    }
+    
+    #biglogo {
+      position: relative;
+      top: 0px;
+		  width: 100%;
+		  height: 100vh;
+      display: flex;
+  		flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5% 10% 5% 10%;
+      box-sizing: border-box;
+  		border: 1px solid red;	
+    }
+      
+    #logo {
+		  width: 40%;
+      height: auto;
+  		background-position: center;
+  		background-repeat: no-repeat;
+  		background-size: contain;
+  		/*border: 1px solid red;*/	
+    }
+      
+    #bigmike {
+		  width: 40%;
+      height: auto;
+  		background-position: center;
+  		background-repeat: no-repeat;
+  		background-size: contain;
+  		border: 1px solid red;	
+    }
+    
+    #mikespage {
+      position: relative;
+		  width: 100%;
+		  height: auto;
+      background: linear-gradient(to bottom, rgba(0,0,0,0%) 0%, rgba(0,0,0,100%) 70%);
+      display: flex;
+      align-items: center;
+  		border: 1px solid yellow;	
+    }
+    
+    #mikespage-flex {
+      position: relative;
+		  width: 100%;
+		  height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 10% 10% 5% 10%;
+      box-sizing: border-box;
+  		border: 1px solid red;
+    }
+    
+    #spacer {
+      position: relative;
+  		margin: auto;
+		  width: 100%;
+      height: 20vh;
+      background: linear-gradient(to bottom, rgba(0,0,0,100%) 0%, rgba(0,0,0,100%) 30%, rgba(0,0,0,40%) 90%);
+  		text-align: center;
   		color: white;
       font-family: gensin;
-  		border: 1px solid green;
+      padding-top: 5%;
+    }
+    
+    #part2 {
+      position: relative;
+  		margin: auto;
+		  width: 100%;
+      height: auto;
+      /*aspect-ratio: 1/1;*/
+  		color: white;
+      display: flex;
+      align-items: flex-start;
+  		flex-flow: row wrap;
+			background-image: url("https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/BG%204a.png");
+  		background-attachment: fixed;
+      background-color: grey;
+  		background-position: center;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		/*border: 1px solid red;*/	
+    }
+      
+    #servantpage-flex-odd {
+      position: relative;
+		  width: 50%;
+		  height: auto;
+      min-width: 50%;
+      display: flex;
+      align-items: flex-start;
+  		flex-direction: row;
+      justify-content: space-between;
+      padding: 5% 5% 5% 5%;
+      box-sizing: border-box;
+      background-color: rgba(0,0,0,40%);
+  		/*border: 1px solid red;*/	
+    }
+      
+    #servantpage-flex-even {
+      position: relative;
+		  width: 50%;
+		  height: auto;
+      min-width: 50%;
+      display: flex;
+      align-items: flex-start;
+  		flex-direction: row;
+      justify-content: space-between;
+      padding: 5% 5% 5% 5%;
+      box-sizing: border-box;
+      background-color: rgba(0,0,0,40%);
+  		/*border: 1px solid red;*/	
+    }
+    
+    @media (max-width: 768px) {
+ 			#part1 {
+     		height: auto;
+  			background-position: center bottom;
+  		}
+      
+ 			#biglogo {
+  			flex-flow: column nowrap;
+      	padding: 10% 10% 50% 10%;
+  		}
+      
+      #logo {
+        width: 90%;
+        height: auto;
+      }
+
+      #bigmike {
+        width: 90%;
+        height: auto;
+      }
+      
+      #mikespage-flex{
+      	padding: 20% 5% 5% 5%;
+     	}
+    
+      #spacer {
+        height: auto;
+        padding-top: 20%;
+        padding-bottom: 20%;
+      }
+      
+ 			#part2 {
+  	 	 flex-flow: column nowrap;
+  	 	 align-items: stretch;
+  		}
+      
+      #servantpage-flex-odd {
+		  	width: 100%;
+     	}
+      
+      #servantpage-flex-even {
+		  	width: 100%;
+  			flex-direction: row-reverse;
+     	}
+      
+		}		
+    
+    #mikepix {
+		  width: 20%;
+      height: auto;
+  		/*border: 1px solid green;*/
+    }	
+    
+    #pix {
+		  width: 20%;
+      height: auto;
+  		/*border: 1px solid green;*/
+    }
+    
+    #spell {
+		  width: 70%;
+  		color: white;
+      font-family: gensin;
+  		/*border: 1px solid green;*/
     }
     
     #spell_title {
     	color: cyan;
       font-size: 12pt;
+  		text-align: left;
     }
     
     #spell_desc {
     	color: white;
       font-size: 10pt;
+  		text-align: justify;
+    }
+    
+    #spell_quote {
+    	color: rgb(200,200,200);
+      font-size: 10pt;
+      margin-left: 10px;
+      padding-left: 10px;
+  		border-left: 5px solid rgb(100,100,100);
+  		text-align: justify;
+    }
+    
+    #spell_quote_serv {
+    	color: rgb(200,200,50);
+      font-size: 10pt;
+      margin-left: 10px;
+      padding-left: 10px;
+  		border-left: 5px solid rgb(100,100,10);
     }
       
    </style>
@@ -118,19 +249,96 @@
 <body>
 
   <div id="part1">
-    <div id="biglogo"> </div>
-    <div id="bigmike"> </div>
-  	<div id="mikespage">
-      <div id="mikepix"> </div>
-      <div id="spell">
-        <span id="spell_title">Mikranth Anghariel - “The Wandering Shade”<br><br></span>
-        <span id="spell_desc">Sosok yang suka mengamati dan menilai setiap budaya baru. Anghariel sering melintas di batas dunia tanpa terdeteksi, mengumpulkan cerita dan inspirasi dari negeri seberang. Riwayatnya dia pernah berpesan sebelum memulai menjelajah ke negeri lain.</span>
+    
+    <div id="biglogo">
+      <img id="logo" src="https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/logo%202.png"></img>
+      <img id="bigmike" src="https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/Mike%202a.png"></img>
+  	</div>
+  
+    <div id="mikespage">      
+      <div id="mikespage-flex">
 
-<img src="https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/mikepix.png" style="width:200px;border:1px solid red;">
- </div>
+        <img id="mikepix" src="https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/mikepix.png" style="transform: scaleX(-1);"> </img>
+        <div id="spell">
+        <span id="spell_title">Mikranth Anghariel - “The Wandering Shade”<br><br></span>
+        <span id="spell_desc">Sosok yang suka mengamati dan menilai setiap budaya baru. Anghariel sering melintas di batas dunia tanpa terdeteksi, mengumpulkan cerita dan inspirasi dari negeri seberang. Riwayatnya dia pernah berpesan sebelum memulai menjelajah ke negeri lain.<br><br></span>
+       <div id="spell_quote">“Tidak terasa hari ini jadi hari terakhir ku di Decoruum Sanctum.
+    Terimakasih banget buat semua obrolan, bantuan dan ilmu yang ku dapatkan selama bekerja disini. Semoga para servant semakin baik kedepannya & tercapai tujuannya masing-masing. Sampai jumpa lagi di lain waktu. Mohon maaf kalau ku ada salah 🙏 babay gais.”</div>
+
+
+        </div>
+      </div>
     </div>
   </div>
+	
 
+  <div id="part2">
+        
+	<div id="spacer">- Pesan dari para servant yang pernah ia temui sebelumnya -</div>
+    
+    <div id="servantpage-flex-odd">
+      <img id="pix" src="https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/mikepix.png" style="transform: scaleX(-1);"> </img>
+      <div id="spell">
+        <span id="spell_title">Mikranth Anghariel - “The Wandering Shade”<br><br></span>
+        <span id="spell_desc">Sosok yang suka mengamati dan menilai setiap budaya baru. Anghariel sering melintas di batas dunia tanpa terdeteksi, mengumpulkan cerita dan inspirasi dari negeri seberang. Riwayatnya dia pernah berpesan sebelum memulai menjelajah ke negeri lain.<br><br></span>
+       <div id="spell_quote_serv">“Tidak terasa hari ini jadi hari terakhir ku di Decoruum Sanctum.
+          Terimakasih banget buat semua obrolan, bantuan dan ilmu yang ku dapatkan selama bekerja disini. Semoga para servant semakin baik kedepannya & tercapai tujuannya masing-masing. Sampai jumpa lagi di lain waktu. Mohon maaf kalau ku ada salah 🙏 babay gais.”</div>
+       </div>
+    </div>      
+    
+    <div id="servantpage-flex-even">
+      <img id="pix" src="https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/mikepix.png" style="transform: scaleX(-1);"> </img>
+    <div id="spell">
+      <span id="spell_title">Mikranth Anghariel - “The Wandering Shade”<br><br></span>
+      <span id="spell_desc">Sosok yang suka mengamati dan menilai setiap budaya baru. Anghariel sering melintas di batas dunia tanpa terdeteksi, mengumpulkan cerita dan inspirasi dari negeri seberang. Riwayatnya dia pernah berpesan sebelum memulai menjelajah ke negeri lain.<br><br></span>
+     <div id="spell_quote_serv">“Tidak terasa hari ini jadi hari terakhir ku di Decoruum Sanctum.
+        Terimakasih banget buat semua obrolan, bantuan dan ilmu yang ku dapatkan selama bekerja disini. Semoga para servant semakin baik kedepannya & tercapai tujuannya masing-masing. Sampai jumpa lagi di lain waktu. Mohon maaf kalau ku ada salah 🙏 babay gais.”</div>
+       </div>
+    </div>   
+        
+    <div id="servantpage-flex-odd">
+      <img id="pix" src="https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/mikepix.png" style="transform: scaleX(-1);"> </img>
+      <div id="spell">
+        <span id="spell_title">Mikranth Anghariel - “The Wandering Shade”<br><br></span>
+        <span id="spell_desc">Sosok yang suka mengamati dan menilai setiap budaya baru. Anghariel sering melintas di batas dunia tanpa terdeteksi, mengumpulkan cerita dan inspirasi dari negeri seberang. Riwayatnya dia pernah berpesan sebelum memulai menjelajah ke negeri lain.<br><br></span>
+       <div id="spell_quote_serv">“Tidak terasa hari ini jadi hari terakhir ku di Decoruum Sanctum.
+          Terimakasih banget buat semua obrolan, bantuan dan ilmu yang ku dapatkan selama bekerja disini. Semoga para servant semakin baik kedepannya & tercapai tujuannya masing-masing. Sampai jumpa lagi di lain waktu. Mohon maaf kalau ku ada salah 🙏 babay gais.”</div>
+       </div>
+    </div>      
+    
+    <div id="servantpage-flex-even">
+      <img id="pix" src="https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/mikepix.png" style="transform: scaleX(-1);"> </img>
+    <div id="spell">
+      <span id="spell_title">Mikranth Anghariel - “The Wandering Shade”<br><br></span>
+      <span id="spell_desc">Sosok yang suka mengamati dan menilai setiap budaya baru. Anghariel sering melintas di batas dunia tanpa terdeteksi, mengumpulkan cerita dan inspirasi dari negeri seberang. Riwayatnya dia pernah berpesan sebelum memulai menjelajah ke negeri lain.<br><br></span>
+     <div id="spell_quote_serv">“Tidak terasa hari ini jadi hari terakhir ku di Decoruum Sanctum.
+        Terimakasih banget buat semua obrolan, bantuan dan ilmu yang ku dapatkan selama bekerja disini. Semoga para servant semakin baik kedepannya & tercapai tujuannya masing-masing. Sampai jumpa lagi di lain waktu. Mohon maaf kalau ku ada salah 🙏 babay gais.”</div>
+       </div>
+    </div>    
+        
+    <div id="servantpage-flex-odd">
+      <img id="pix" src="https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/mikepix.png" style="transform: scaleX(-1);"> </img>
+      <div id="spell">
+        <span id="spell_title">Mikranth Anghariel - “The Wandering Shade”<br><br></span>
+        <span id="spell_desc">Sosok yang suka mengamati dan menilai setiap budaya baru. Anghariel sering melintas di batas dunia tanpa terdeteksi, mengumpulkan cerita dan inspirasi dari negeri seberang. Riwayatnya dia pernah berpesan sebelum memulai menjelajah ke negeri lain.<br><br></span>
+       <div id="spell_quote_serv">“Tidak terasa hari ini jadi hari terakhir ku di Decoruum Sanctum.
+          Terimakasih banget buat semua obrolan, bantuan dan ilmu yang ku dapatkan selama bekerja disini. Semoga para servant semakin baik kedepannya & tercapai tujuannya masing-masing. Sampai jumpa lagi di lain waktu. Mohon maaf kalau ku ada salah 🙏 babay gais.”</div>
+       </div>
+    </div>      
+    
+    <div id="servantpage-flex-even">
+      <img id="pix" src="https://raw.githubusercontent.com/Namlihaa/mikesquest/main/images/mikepix.png" style="transform: scaleX(-1);"> </img>
+    <div id="spell">
+      <span id="spell_title">Mikranth Anghariel - “The Wandering Shade”<br><br></span>
+      <span id="spell_desc">Sosok yang suka mengamati dan menilai setiap budaya baru. Anghariel sering melintas di batas dunia tanpa terdeteksi, mengumpulkan cerita dan inspirasi dari negeri seberang. Riwayatnya dia pernah berpesan sebelum memulai menjelajah ke negeri lain.<br><br></span>
+     <div id="spell_quote_serv">“Tidak terasa hari ini jadi hari terakhir ku di Decoruum Sanctum.
+        Terimakasih banget buat semua obrolan, bantuan dan ilmu yang ku dapatkan selama bekerja disini. Semoga para servant semakin baik kedepannya & tercapai tujuannya masing-masing. Sampai jumpa lagi di lain waktu. Mohon maaf kalau ku ada salah 🙏 babay gais.”</div>
+       </div>
+    </div>      
+    
+    
+    
+	</div>
   
 
 </body>
